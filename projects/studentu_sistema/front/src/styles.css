@@ -1,0 +1,42 @@
+div.sm-jumbotron{
+    margin: 0px;
+    padding: 0.5rem;
+    background-color: #38547b;
+    color: #fff;
+}
+
+div.sm-color{
+	background-color: #38547b !important;
+  padding:0 !important;
+}
+
+button.btn-submit{
+    background-color: #38547b;
+    color: #fff;
+    width: 100%;
+}
+button.btn-submit:focus,button.btn-submit:hover{
+    background-color: #38547b;
+}
+
+#mobile-demo{
+		color: #38547b !important;
+}
+
+.secondary-content.card{
+  margin: 0 !important;
+  border-radius: 25px !important;
+  padding: 0px 7px 0px 7px !important;
+}
+
+.collection-item{padding: 5px !important;}
+
+p.left{
+  margin: 0 !important;
+}
+
+div.col.s12.l6.sm-color{padding: 0 !important;}
+
+.border-custom{padding: 0 !important;}
+
+i{margin:0 !important;}

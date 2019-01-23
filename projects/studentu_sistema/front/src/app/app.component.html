@@ -1,0 +1,12 @@
+<nav *ngIf="router.url!='/prisijungimas' && router.url!='/registracija' && showNavbar">
+
+    <div class="nav-wrapper sm-color z-depth-1">
+    <a class="brand-logo center"><IMG src="assets\img\favicon.png" ALT="some text" class="knocker-logo"></a>
+    <ul class="right">
+        <li *ngIf="router.url!='/duomenys'"><a routerLink="/duomenys"><i class="material-icons">folder</i></a></li>
+        <li *ngIf="router.url!='/profilis'"><a routerLink="/profilis"><i class="material-icons">person</i></a></li>
+        <li><a routerLink="/prisijungimas"><i class="material-icons">exit_to_app</i></a></li>
+    </ul>
+    </div>
+  </nav>
+<router-outlet></router-outlet>
