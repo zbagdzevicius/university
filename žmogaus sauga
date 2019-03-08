@@ -1,0 +1,118 @@
+prisilietimo įtampa - įtampa tarp 2 grandinės taškų, kuriuos liečia žmogus
+
+žingsnio įtampa - žmogui tenkanti įtampos dalis, kai srovė žmogaus kūnu teka iš kojos
+į koją, o horizontalus atstumas per žingsnį nutolūsių žemės taškų šalia įžeminimo arba
+įžemėjimo vietos yra 1 metras.
+
+gedimo įtampa - tai įtampa, kai atsiranda pažeidus korpusą tarp korpuso ir žemės.
+Kai ant korpuso atsiranda įtampa. kai pažeidžiamas korpusas.
+
+tinklo sistema priklauso nuo neutralės. 
+Elektros tinklai pagal neutralės įžeminimą skirstomi:
+    tiesiogiai įžemintos neutralės
+    varža įžemintos neutralės
+    konpensuotos neutralės
+    izoliuotos neutralės
+
+it sistema - kur didžiuliai saugumo reikalavimai
+tt sistema - nuolatinės srovės tinkluose ir telekomunikacijų tinkluose, keturlaidė
+tn sistema - kasdieninė, pramonės, buitinė, vartojimas normos ribose, penkialaidė - keturlaidė
+turi posistemes:
+    tn-s - s yra penkialaidė sistema, pe laidas
+    tn-c - c yra keturlaidė sistema, 3 fazės, 1 laidininkas, pen laidas
+    tn-c-s - 
+pirmoji raidė reiškia tinklo neutralės ryšį su žeme (I - izoliacinis arba T - įžeminta)
+antroji raidė reiškia elektros įrenginių pasyviųjų dalių ryšį su žeme (T - neturi ryšio, N - tarpusavio ryšys neutralė(įžeminimas))
+
+apsaugos
+
+TN tinklo sistema 
+Naudojama trumpojo jungimo srovių apsauga ir srovės skirtuminė apsauga
+apsaugų poveikio laikas neilgiau 5 sekundžių, jeigu daugiau, vadinasi blogai, nes ant įrenginio
+yra prisilietimo įtampa
+trumpojo jungimo srovės atjungimo sąlyga - Zs*Ja <= U0
+Zs - grandinės pilnutinė varža - fazė nulis
+Ja - apsaugos aparato suveikimo srovė
+U0 - pradinė sąlyga
+skirtuminės srovės atjungimo sąlyga - Zs*Jn <= Ul
+Zs - grandinės pilnutinė varža - fazė nulis
+In - skirtuminės srovės apsaugos/aparato suveikimo srovė
+Ul - saugi įtampa
+
+TT tinklo sistema
+Naudojama trumpojo jungimo srovių apsauga ir srovės skirtuminė apsauga
+apsaugų poveikio laikas neilgiau 5 sekundžių, jeigu daugiau, vadinasi blogai, nes ant įrenginio
+yra prisilietimo įtampa
+Trumpojo jungimo srovių atjungimo sąlyga - Ra*Ia <= Ul
+Ra - vietinio įžeminimo įrenginių varža
+Ia - trumpojo jungimo srovės apsaugos aparato suveikimo srovė
+Ul - saugi įtampa
+Srovės skirtuminės apsaugos atjungimo sąlyga Ra*In <= Ul
+Ra - vietinio įžeminimo įrenginių varža
+In - srovės skirtuminės apsaugos suveikimo srovė
+Ul - saugi įtampa
+
+IT tinklo sistema
+Naudojama trumpojo jungimo srovių apsauga ir srovės skirtuminė apsauga, izoliacijos kontrolė,
+signalizacija optinė ir akustinė apie įžemėjųsį tinklą, apsaugų poveikio laikas neilgiau
+ 5 sekundžių, jeigu daugiau, vadinasi blogai, nes ant įrenginio yra prisilietimo įtampa
+Trumpojo jungimo atjungimo sąlyga - Za*Ia <= Ut
+Za - Grandinės vienos fazės vietinio įžemintuvo ir kitos fazės suminė pilnoji varža
+Ia - Apsaugos aparato suveikimo srovė
+Ut - Įtampa tarp įžemėjusių laidų
+Srovės skirtuminės apsaugos atjungimo sąlyga Ra*In <= Ul
+Ra - vietinio įžeminimo įrenginių varža
+In - srovės skirtuminės apsaugos suveikimo srovė
+Ul - saugi įtampa
+
+
+
+užduotis:
+turime vienfazį tinklą (230v) p=4000w, k=10, p=2000w, Imax?
+Imax = 4000w/230v =  17.4 A
+Iatj = 20
+Iįrk = 10 * (2000w/230v) = 86.95 A
+Ix = 2000w/230v= 8.7 A
+Isum = Iįrk + Ix = 86.95 A + 8.7 A = 96.65 A
+20A * 3 = 60, tai 20B NETINKA
+20A * 5 = 100, tai 20C TINKA
+
+šynų žymėjimas
+esant kitnamajai trifazei:
+L1 geltona
+L2 žalia
+L3 raudona
+N mėlyna
+PE ir PEN - geltonos ir žalios spalvos juostomis
+esant vienfazei srovei:
+L1 - geltona
+L2 - raudona
+Nuolatinės srovė:
+teigiama - raudona,
+neigiama - mėlyna
+rezervinės šynos: tos pačios spalvos, tik su skersinėm juostom
+
+apsaugos nuo elektros poveikio priemonės ir būdai:
+Organizacinės ir techninės priemonės
+organizacinės:
+leidimai, nurodymai, darbų įforminimai ir kiti veiksmi, kurie išduodami dirbančiajam
+darbų vadovas/inžinierius/atsakingas asmuo.
+    pagrindinės:
+        nurodymas - visam laikotarpiui, kol bus atlikti darbai
+        pavedimas - apiforminimas vienai dienai
+        techninė priežiūra
+techninės priemonės:
+    visi techniniai veiksmai, (siekiant apsisaugoti nuo tiesioginio prisilietimo prie įtampą turinčių dalių)
+
+apsaugos nuo elektros poveikio būdai:
+    apsauginių priemonių naudojimas
+    pažemintos įtampos naudojimas
+    skiriamųjų transformatorių naudojimas
+    įrenginių su sustiprinta izoliacija naudojimas
+    renginiams nustatytų vardinių parametrų laikymasis
+    potencialų suvienodinimas
+
+apsaugos nuo elektros srovės priemonės:
+    pagrindinės:
+        tos, kurių izoliacija patikimai išlaiko įtampą ir leidžia liesti srovines dalis
+    papildomos

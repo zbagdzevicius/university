@@ -1,0 +1,42 @@
+paskola = 100000eur
+laikotarpis = 30 metu
+palukanos = 10%
+
+po menesio
+100000eur + 10%/12menesiu 
+12menesiu * 30metu = 360 menesiu
+
+b - kiek palukanu per menesi
+b=10%/12
+
+neskaiciojant palukanu
+y(n)=y(n-1) + b*y(n-1)
+
+skaiciuojant palukanas
+y(n)=y(n-1) + b*y(n-1) + Xi(n) - Xp(n)
+Xi - is banko pasiskolinta suma n-taji menesi
+Xp - suma sugrazinta suma n-taji menesi
+
+v = 1 + b = 1 + 10%/12 = 12,1/12
+palukanu procentas pridejus vieneta
+
+X(n) = p*D(n) - d*u(n-1)
+Y(n) = p*H(n) + d*s(n-1)
+D(n) -> H(n)
+u(n) -> s(n)
+y(n) = v*y(n-1) + D(n) 
+
+
+
+
+X(n) = D(n) = 0, n>0
+Yp = 0
+
+sąsuka
+
+s(n) = h(n) * u(n) = SUM(N, k=0) h(k) = SUM(n, k=0) v^k=(1-(v^n)+1)/(1-v), n>=0
+y(n) = p*h(n) + d*s(n-1) = p*(v^n)*u(n) - d * (1*v^(n+1))/(1-v))*u(n-1)
+
+
+y(360) = p*(v^360) - d*((1-(v^360)/(1-v)) = 1/(1-v) [p(1-v)*(v^360)-d(1-(v^360))] = 0
+d=(p(1-v)/(1-(v^360))*(v^360))
